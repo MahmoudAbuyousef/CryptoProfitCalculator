@@ -1,0 +1,141 @@
+/* ============================ Global Value ============================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eff1f4;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+/* =========================== Dark & Light Mood =============================== */
+.dark-mood {
+  background-color: #333;
+  color: #fff;
+}
+/* =========================== Navbar =============================== */
+.nav .navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav .navbar .logo {
+  margin: 25px 0;
+}
+
+.nav .navbar .logo img {
+  width: 180px;
+}
+
+.nav .navbar .dots img {
+  width: 5px;
+}
+
+.nav .links {
+  display: none;
+  position: absolute;
+  background-color: #f5f5f5;
+  width: 100%;
+  top: 50px;
+}
+
+.nav .links ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav .links ul li {
+  padding: 10px;
+}
+
+.nav button {
+  padding: 8px;
+  width: 50px;
+  border: none;
+  background-color: #ddd;
+  color: #000;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* ======================= Main ====================== */
+.main .main-container {
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 15px;
+  margin: 30px 0;
+}
+
+.main .main-container label {
+  margin: 10px 0;
+  display: block;
+}
+
+.main .main-container input {
+  display: block;
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.btn-calc {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  display: block;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+.show-result-calc {
+  padding: 15px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  width: 100%;
+}
+
+
+/* ======================= Media ===================== */
+@media screen and (min-width: 577px) {
+  .nav .navbar .dots img {
+    display: none;
+  }
+
+  .nav .links {
+    display: block;
+    position: static;
+    background-color: transparent;
+    width: fit-content;
+  }
+
+  .nav .links ul {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .nav .navbar .logo img {
+    width: 300px;
+  }
+}
