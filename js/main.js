@@ -1,13 +1,3 @@
-// =================== Dots =================
-function dots() {
-  let toggelbar = document.getElementById("links");
-  if (toggelbar.style.display == "none") {
-    toggelbar = document.getElementById("links").style.display = "block";
-  } else {
-    toggelbar = document.getElementById("links").style.display = "none";
-  }
-}
-
 const darkMode = document.getElementById("dark-mode"),
   body = document.getElementById("body");
 darkMode.addEventListener("click", () => {

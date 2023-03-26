@@ -16,13 +16,6 @@ body {
   margin: auto;
 }
 
-ul {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-}
 /* =========================== Dark & Light Mood =============================== */
 .dark-mood {
   background-color: #333;
@@ -30,41 +23,14 @@ a {
 }
 /* =========================== Navbar =============================== */
 .nav .navbar {
-  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.nav .navbar .logo {
-  margin: 25px 0;
-}
-
-.nav .navbar .logo img {
-  width: 180px;
-}
-
-.nav .navbar .dots img {
-  width: 5px;
-}
-
-.nav .links {
-  display: none;
-  position: absolute;
-  background-color: #f5f5f5;
-  width: 100%;
-  top: 50px;
-}
-
-.nav .links ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.nav .links ul li {
   padding: 10px;
+}
+
+.nav .navbar h1 {
+  font-size: 15px;
 }
 
 .nav button {
@@ -113,29 +79,4 @@ a {
   border: 1px solid #ccc;
   background-color: #fff;
   width: 100%;
-}
-
-
-/* ======================= Media ===================== */
-@media screen and (min-width: 577px) {
-  .nav .navbar .dots img {
-    display: none;
-  }
-
-  .nav .links {
-    display: block;
-    position: static;
-    background-color: transparent;
-    width: fit-content;
-  }
-
-  .nav .links ul {
-    flex-direction: row;
-  }
-}
-
-@media screen and (min-width: 767px) {
-  .nav .navbar .logo img {
-    width: 300px;
-  }
 }
